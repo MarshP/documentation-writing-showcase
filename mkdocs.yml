@@ -1,5 +1,5 @@
 site_name: My Docs
-theme: lux
+theme: readthedocs
 markdown_extensions:
     - extra
     - admonition
