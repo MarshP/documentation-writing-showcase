@@ -12,7 +12,7 @@ nav:
     - Home: 'index.md'
     - 'User Guide':
         - 'Writing your docs': 'style-sheet-test.md'
-        - 'Styling your docs': 'style-sheet-test.md.md'
+        - 'Styling your docs': 'style-sheet-test.md'
     - About:
         - 'License': 'style-sheet-test.md'
         - 'Release Notes': 'style-sheet-test.md'    

@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Markdown Style Examples - My Docs</title>
+        <title>Release Notes - My Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -34,10 +34,33 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                                <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Markdown Style Examples</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item">Writing your docs</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item">Styling your docs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item">License</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Release Notes</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -48,7 +71,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="./" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -112,16 +135,11 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<!-- Start Document Outline -->
-
+<div class="toc">
 <ul>
 <li><a href="#markdown-style-examples">Markdown Style Examples</a><ul>
 <li><a href="#elements-in-this-doc">Elements in This Doc</a><ul>
-<li><a href="#h3--label-level">H3 == label level</a><ul>
-<li><a href="#block-quotes">Block-quotes</a></li>
-<li><a href="#code-blocks">Code blocks</a></li>
-</ul>
-</li>
+<li><a href="#h3-label-level">H3 == label level</a></li>
 </ul>
 </li>
 <li><a href="#spans-n-divs-n-icons">Spans n' Divs n' Icons</a></li>
@@ -135,23 +153,19 @@
 </ul>
 </li>
 <li><a href="#tables">Tables</a></li>
-<li><a href="#other-extensions">Other Extensions</a><ul>
-<li><a href="#figure-and-caption">Figure and caption</a></li>
+<li><a href="#other-extensions">Other Extensions</a></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<!-- End Document Outline -->
-
-<h1 id="markdown-style-examples">Markdown Style Examples</h1>
-<p>A somewhat-realistic page to show how all MD elements look with a given stylesheet. (A common project convention is to use H1 only as title, not in intra-document headings. H1 makes a good information map title.) </p>
-<h2 id="elements-in-this-doc">Elements in This Doc</h2>
+</div>
+<h1 id="markdown-style-examples"><a class="toclink" href="#markdown-style-examples">Markdown Style Examples</a><a class="headerlink" href="#markdown-style-examples" title="Permanent link">&para;</a></h1>
+<p>A somewhat-realistic page to show how all <abbr title="Markdown">MD</abbr> elements look with a given stylesheet. (A common project convention is to use H1 only as title, not in intra-document headings. H1 makes a good information map title.) </p>
+<h2 id="elements-in-this-doc"><a class="toclink" href="#elements-in-this-doc">Elements in This Doc</a><a class="headerlink" href="#elements-in-this-doc" title="Permanent link">&para;</a></h2>
 <p>All major elements are used, but not every flavour/method of creating
-them is shown. This is not a MD primer. The structure is somewhat forced, in order to test ToC tools. (H2 makes a good information block title.)</p>
-<h3 id="h3-label-level">H3 == label level</h3>
+them is shown. This is not a <abbr title="Markdown">MD</abbr> primer. The structure is somewhat forced, in order to test ToC tools. (H2 makes a good information block title.)</p>
+<h3 id="h3-label-level"><a class="toclink" href="#h3-label-level">H3 == label level</a><a class="headerlink" href="#h3-label-level" title="Permanent link">&para;</a></h3>
 <p>Use h3 for most working divisions in technical docs. (This is label-level in information mapping.)</p>
-<h4 id="block-quotes">Block-quotes</h4>
+<h4>Block-quotes</h4>
 <blockquote>
 <p>This is a block paragraph for inline
 quoting. It is given the tag "blockquote".</p>
@@ -159,14 +173,14 @@ quoting. It is given the tag "blockquote".</p>
 <p>They can be nested</p>
 </blockquote>
 </blockquote>
-<h4 id="code-blocks">Code blocks</h4>
+<h4>Code blocks</h4>
 <pre><code class="Python">print('Fenced code block')
 print('with syntax identifier')
 a = 15
 </code></pre>
 
 <p>We can also put <code>code inline using backticks</code> and make content around it.</p>
-<h2 id="spans-n-divs-n-icons">Spans n' Divs n' Icons</h2>
+<h2 id="spans-n-divs-n-icons"><a class="toclink" href="#spans-n-divs-n-icons">Spans n' Divs n' Icons</a><a class="headerlink" href="#spans-n-divs-n-icons" title="Permanent link">&para;</a></h2>
 <div class="infoBox">
 **This text** is in a div with class 'infoBox' so we can see how custom class styles work. Examples in this section will be plain if the the css lacks this class
 </div>
@@ -182,15 +196,19 @@ Some flavours allow creating or using a div class on the fly
 <p>[!Warning]
 Some flavours support Note, Tip, Warning, Important and Caution blockquotes with in-built styling and icons. </p>
 </blockquote>
-<h2 id="text-attributes">Text Attributes</h2>
+<div class="admonition note">
+<p class="admonition-title">optional explicit title within double quotes</p>
+<p>Another way to add admonish - may need CSS</p>
+</div>
+<h2 id="text-attributes"><a class="toclink" href="#text-attributes">Text Attributes</a><a class="headerlink" href="#text-attributes" title="Permanent link">&para;</a></h2>
 <p>Text attributes are given these html elements: <em>em</em>, <strong>strong</strong>, <code>code</code>, ~~del~~</p>
 <p>Extended flavours provide these html elements: ==mark==, ++ins++, ~sub~, ^sup^. (Plain if not supported in the flavour/stylesheet used.)</p>
-<h3 id="jump-around">Jump around</h3>
+<h3 id="jump-around"><a class="toclink" href="#jump-around">Jump around</a><a class="headerlink" href="#jump-around" title="Permanent link">&para;</a></h3>
 <p><a id="jump-here"></a>
 Many Markdown processors support custom I.Ds for headings — some Markdown processors automatically add them. Some add them but change to slug-style-wording (GitHub flavour). If not, adding custom I.Ds allows you to link directly to headings and modify them with CSS.</p>
 <p>You can link to <a href="#jump-around">slug-style auto-generated I.Ds</a> or <a href="#jump-here">link to your personal I.Ds</a> throughout.</p>
-<p>Here is a footnote reference,[^1] and another.[^longnote]</p>
-<h2 id="lists">Lists</h2>
+<p>Here is a footnote reference,<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> and another.<sup id="fnref:longnote"><a class="footnote-ref" href="#fn:longnote">2</a></sup></p>
+<h2 id="lists"><a class="toclink" href="#lists">Lists</a><a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Unordered lists can use an asterisk, like these nested items:</li>
 <li>Barry Bonds</li>
@@ -225,22 +243,23 @@ Many Markdown processors support custom I.Ds for headings — some Markdown proc
 <li>[x] From GH flavoured markdown</li>
 </ul>
 <hr />
-<p>Click this Definition List definition
-:   This is a definition item
-:   Some flavours will fold it</p>
-<h2 id="links">Links</h2>
+<dl>
+<dt>Click this Definition List definition</dt>
+<dd>This is a definition item</dd>
+<dd>Some flavours will fold it</dd>
+</dl>
+<h2 id="links"><a class="toclink" href="#links">Links</a><a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <p>There are three common styles for links. First, obviousy, just a URL which some flavours link automatically:</p>
 <p>https://www.marsh.org.uk</p>
 <p><a href="https://www.marsh.org.uk">Link text with link address elsewhere</a></p>
 <p><a href="https://www.marsh.org.uk">Link text with link inline</a></p>
-<h3 id="images-and-media">Images and media</h3>
+<h3 id="images-and-media"><a class="toclink" href="#images-and-media">Images and media</a><a class="headerlink" href="#images-and-media" title="Permanent link">&para;</a></h3>
 <p>Now for media and images, some flavours embed media:</p>
 <p><img alt="youtube.com" src="https://www.youtube.com/watch?v=mswPy5bt3TQ" /></p>
-<p>*[MD]: Markdown</p>
-<p>Here a abbr. is defined and when used below will have hover text: MD</p>
+<p>Here a abbr. is defined and when used below will have hover text: <abbr title="Markdown">MD</abbr></p>
 <p><img alt="Alt-text-here" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Octicons-markdown.svg/128px-Octicons-markdown.svg.png" /></p>
 <p>In certain Markdown implementations you can append =WIDTHxHEIGHT after the URL of the graphic file to resize the image. Do not forget the space before the =.</p>
-<h2 id="tables">Tables</h2>
+<h2 id="tables"><a class="toclink" href="#tables">Tables</a><a class="headerlink" href="#tables" title="Permanent link">&para;</a></h2>
 <p>Note the colons for alignment in this table (text version)</p>
 <table>
 <thead>
@@ -268,23 +287,32 @@ Many Markdown processors support custom I.Ds for headings — some Markdown proc
 </tr>
 </tbody>
 </table>
-<h2 id="other-extensions">Other Extensions</h2>
-<h4 id="figure-and-caption">Figure and caption</h4>
+<h2 id="other-extensions"><a class="toclink" href="#other-extensions">Other Extensions</a><a class="headerlink" href="#other-extensions" title="Permanent link">&para;</a></h2>
+<h4>Figure and caption</h4>
 <p>These are in some flavours. Also below are the final heading samples.</p>
 <p>^^^
 <img alt="Alt-text-here" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Octicons-markdown.svg/128px-Octicons-markdown.svg.png" />
 ^^^ Caption - Markdown icon</p>
-<h5 id="maths">Maths</h5>
+<h5>Maths</h5>
 <p>$$
 \begin{equation}
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
   \label{eq:sample}
 \end{equation}
 $$</p>
-<h6 id="footnotes">Footnotes</h6>
-<p>[^1]: Here is the footnote.
-[^longnote]: Here's another footnote..</p>
-<p>End of file - note the footnotes may appear below this in html even if above them in raw MD.</p></div>
+<h6>Footnotes</h6>
+<p>End of file - note the footnotes may appear below this in html even if above them in raw <abbr title="Markdown">MD</abbr>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Here is the footnote.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:longnote">
+<p>Here's another footnote..&#160;<a class="footnote-backref" href="#fnref:longnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
             </div>
         </div>
 
