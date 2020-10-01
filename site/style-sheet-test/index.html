@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Markdown Style Examples - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Markdown Style Examples</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#markdown-style-examples" class="nav-link">Markdown Style Examples</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#elements-in-this-doc" class="nav-link">Elements in This Doc</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#spans-n-divs-n-icons" class="nav-link">Spans n' Divs n' Icons</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#text-attributes" class="nav-link">Text Attributes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lists" class="nav-link">Lists</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#links" class="nav-link">Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tables" class="nav-link">Tables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#other-extensions" class="nav-link">Other Extensions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<!-- Start Document Outline -->
+
+<ul>
+<li><a href="#markdown-style-examples">Markdown Style Examples</a><ul>
+<li><a href="#elements-in-this-doc">Elements in This Doc</a><ul>
+<li><a href="#h3--label-level">H3 == label level</a><ul>
+<li><a href="#block-quotes">Block-quotes</a></li>
+<li><a href="#code-blocks">Code blocks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#spans-n-divs-n-icons">Spans n' Divs n' Icons</a></li>
+<li><a href="#text-attributes">Text Attributes</a><ul>
+<li><a href="#jump-around">Jump around</a></li>
+</ul>
+</li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#links">Links</a><ul>
+<li><a href="#images-and-media">Images and media</a></li>
+</ul>
+</li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#other-extensions">Other Extensions</a><ul>
+<li><a href="#figure-and-caption">Figure and caption</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- End Document Outline -->
+
+<h1 id="markdown-style-examples">Markdown Style Examples</h1>
+<p>A somewhat-realistic page to show how all MD elements look with a given stylesheet. (A common project convention is to use H1 only as title, not in intra-document headings. H1 makes a good information map title.) </p>
+<h2 id="elements-in-this-doc">Elements in This Doc</h2>
+<p>All major elements are used, but not every flavour/method of creating
+them is shown. This is not a MD primer. The structure is somewhat forced, in order to test ToC tools. (H2 makes a good information block title.)</p>
+<h3 id="h3-label-level">H3 == label level</h3>
+<p>Use h3 for most working divisions in technical docs. (This is label-level in information mapping.)</p>
+<h4 id="block-quotes">Block-quotes</h4>
+<blockquote>
+<p>This is a block paragraph for inline
+quoting. It is given the tag "blockquote".</p>
+<blockquote>
+<p>They can be nested</p>
+</blockquote>
+</blockquote>
+<h4 id="code-blocks">Code blocks</h4>
+<pre><code class="Python">print('Fenced code block')
+print('with syntax identifier')
+a = 15
+</code></pre>
+
+<p>We can also put <code>code inline using backticks</code> and make content around it.</p>
+<h2 id="spans-n-divs-n-icons">Spans n' Divs n' Icons</h2>
+<div class="infoBox">
+**This text** is in a div with class 'infoBox' so we can see how custom class styles work. Examples in this section will be plain if the the css lacks this class
+</div>
+
+<p>In A-S documents <span class="callToAction">we have this 'callToAction' class</span>.</p>
+<p>:::callToAction
+Some flavours allow creating or using a div class on the fly
+:::</p>
+<p><span style="color: green; border: 1px dashed;">This span has inline styling.</span></p>
+<p>Some parsers will put font-awesome icons here: <i class="fa fa-eye fa-fw"></i><i class="fa fa-pencil fa-fw"></i></p>
+<p>Most allow emoji :red_car:</p>
+<blockquote>
+<p>[!Warning]
+Some flavours support Note, Tip, Warning, Important and Caution blockquotes with in-built styling and icons. </p>
+</blockquote>
+<h2 id="text-attributes">Text Attributes</h2>
+<p>Text attributes are given these html elements: <em>em</em>, <strong>strong</strong>, <code>code</code>, ~~del~~</p>
+<p>Extended flavours provide these html elements: ==mark==, ++ins++, ~sub~, ^sup^. (Plain if not supported in the flavour/stylesheet used.)</p>
+<h3 id="jump-around">Jump around</h3>
+<p><a id="jump-here"></a>
+Many Markdown processors support custom I.Ds for headings — some Markdown processors automatically add them. Some add them but change to slug-style-wording (GitHub flavour). If not, adding custom I.Ds allows you to link directly to headings and modify them with CSS.</p>
+<p>You can link to <a href="#jump-around">slug-style auto-generated I.Ds</a> or <a href="#jump-here">link to your personal I.Ds</a> throughout.</p>
+<p>Here is a footnote reference,[^1] and another.[^longnote]</p>
+<h2 id="lists">Lists</h2>
+<ul>
+<li>Unordered lists can use an asterisk, like these nested items:</li>
+<li>Barry Bonds</li>
+<li>Mark McGwire</li>
+<li>Astros 2019</li>
+</ul>
+<hr />
+<ul>
+<li>Unordered lists can use a dash</li>
+<li><code>code can sits inline in lists</code><ul>
+<li>double nested items are possible</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ol>
+<li>Make an ordered list</li>
+<li>Start each item with a number (parsers will correct numbering)</li>
+<li>nest an item, mix type to bullet (may not work in all parsers)</li>
+<li>Some parsers allow a. i., etc.
+  i. lower roman nested
+  ii. works in some parsers
+  iii. remember your roman
+  iv. numerals!</li>
+<li>Test lower latin items
+  a. lower latin test
+  b. works with some parsers</li>
+</ol>
+<hr />
+<ul>
+<li>[ ] To do items</li>
+<li>[x] From GH flavoured markdown</li>
+</ul>
+<hr />
+<p>Click this Definition List definition
+:   This is a definition item
+:   Some flavours will fold it</p>
+<h2 id="links">Links</h2>
+<p>There are three common styles for links. First, obviousy, just a URL which some flavours link automatically:</p>
+<p>https://www.marsh.org.uk</p>
+<p><a href="https://www.marsh.org.uk">Link text with link address elsewhere</a></p>
+<p><a href="https://www.marsh.org.uk">Link text with link inline</a></p>
+<h3 id="images-and-media">Images and media</h3>
+<p>Now for media and images, some flavours embed media:</p>
+<p><img alt="youtube.com" src="https://www.youtube.com/watch?v=mswPy5bt3TQ" /></p>
+<p>*[MD]: Markdown</p>
+<p>Here a abbr. is defined and when used below will have hover text: MD</p>
+<p><img alt="Alt-text-here" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Octicons-markdown.svg/128px-Octicons-markdown.svg.png" /></p>
+<p>In certain Markdown implementations you can append =WIDTHxHEIGHT after the URL of the graphic file to resize the image. Do not forget the space before the =.</p>
+<h2 id="tables">Tables</h2>
+<p>Note the colons for alignment in this table (text version)</p>
+<table>
+<thead>
+<tr>
+<th align="left">Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">col 1</td>
+<td align="center">col 2</td>
+<td align="right">col 3</td>
+</tr>
+<tr>
+<td align="left">left-align</td>
+<td align="center">centered</td>
+<td align="right">right-align</td>
+</tr>
+<tr>
+<td align="left">another</td>
+<td align="center">row for</td>
+<td align="right">contrast</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-extensions">Other Extensions</h2>
+<h4 id="figure-and-caption">Figure and caption</h4>
+<p>These are in some flavours. Also below are the final heading samples.</p>
+<p>^^^
+<img alt="Alt-text-here" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Octicons-markdown.svg/128px-Octicons-markdown.svg.png" />
+^^^ Caption - Markdown icon</p>
+<h5 id="maths">Maths</h5>
+<p>$$
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+$$</p>
+<h6 id="footnotes">Footnotes</h6>
+<p>[^1]: Here is the footnote.
+[^longnote]: Here's another footnote..</p>
+<p>End of file - note the footnotes may appear below this in html even if above them in raw MD.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

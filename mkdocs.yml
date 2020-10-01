@@ -1,1 +1,23 @@
 site_name: My Docs
+theme: lux
+markdown_extensions:
+    - extra
+    - admonition
+    - toc:
+        permalink: True
+        toc_depth: 3
+        anchorlink: True
+        # smarty
+nav:
+    - Home: 'index.md'
+    - 'User Guide':
+        - 'Writing your docs': 'style-sheet-test.md'
+        - 'Styling your docs': 'style-sheet-test.md.md'
+    - About:
+        - 'License': 'style-sheet-test.md'
+        - 'Release Notes': 'style-sheet-test.md'    
+
+# The available installed themes are: mkdocs, readthedocs, material, 
+# ivory, cerulean, cosmo, cyborg, darkly, flatly, journal, litera, 
+# lumen, lux, materia, minty, pulse, sandstone, simplex, slate, 
+# solar, spacelab, superhero, united, yeti, bootstrap
